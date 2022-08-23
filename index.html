@@ -1,233 +1,185 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Football is back on the streets</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Poppins:wght@400;500&family=Roboto&family=Roboto+Slab&family=Rubik&display=swap"
-        rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css file-->
     <link rel="stylesheet" href="style.css">
+
 </head>
-
 <body>
-
-    <!------------------- header part start -------------------->
-    <header class="bg-dark text-white header-section">
+        <!-- header partstart -->
+    <header class="header-style">
         <section>
-            <div class=" head">
-                <div> <img class="header-image border-none rounded " src="images/Neymar-messi-suarez.webp" alt=""
-                        srcset="">
-                </div>
-                <div class="mt-5 p-5 text-center">
-                    <h1>Football Is Back On The Streets</h1>
-                    <p> Here you can see the player list and Budget of the player.</p>
-                </div>
-            </div>
+            <br><br><br>
+            <h1 class="heading"> Top 5 Best T20 Player</h1>
+            <p class="para">Brendon McCullum — The man with the highest individual score in T20 cricket is the brilliant West Indian Chris Gayle. With a best of 175 in this format, <br> When people think of the best T20 batsmen, they invariably place Chris Gayle at the top of the pile. The brutal West Indian's record certainly justifies that  <br> its name, dropping "Control" from its title, in January 2007.</p>
+
         </section>
-
-
     </header>
-    <!-- --------------------header part end----------------------------->
 
-    <!-- -------------------main section start--------------------- -->
-    <main class="bg-dark">
+    <!----- header part end ----->
 
 
-        <!-- -------------------------card section start--------------- -->
 
-        <section class="container mt-5">
-            <div class="d-flex">
+    <!----- main part star----t -->
 
-                <div class=" card-part k row row-cols-1 row-cols-md-3 g-4">
+    <main>
+        <section class="body-container">
 
-                    <div class="col">
-                        <div class="card h-100 w-100">
-                            <img src="images/Cristiano-Ronaldo.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title" id="player-name">Cristiano Ronaldo</h5>
-                                <div class="d-flex">
-                                    <p class="card-text"> 30 Goals </p>
-                                    <ul>
-                                        <li>120 Assists</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <button type="button" id="select-btn" class="btn btn-primary"
-                                        onclick="playerSelect(this)">Select</button>
-                                </div>
-                            </div>
 
-                        </div>
+            <div class="player-container">
+
+                <div class="box">
+                    <div>
+                        <img src="picture/virat-kholi-1.jpg" alt="">
                     </div>
-                    <div class="col">
-                        <div class="card h-100 w-100">
-                            <img src="images/Messi.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title" id="player-name2">Lionel Messi</h5>
-                                <div class="d-flex">
-                                    <p class="card-text"> 70 Goals </p>
-                                    <ul>
-                                        <li>200 Assists</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <button type="button" id="select-btn2" class="btn btn-primary"
-                                        onclick="playerSelect(this)">Select</button>
-                                </div>
-                            </div>
-
-                        </div>
+                    <div class="text-center">
+                        <h1>Virat Kholi</h1>
+                        <p>Total Run ODI 15,000 <br>Century : 45</p>
+                        
+                        <button id="kholi-button" class="select-button"> Select </button>
                     </div>
-                    <div class="col">
-                        <div class="card h-100 w-100">
-                            <img src="images/lukaa-modric.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title" id="player-name3">Luka Modric</h5>
-                                <div class="d-flex">
-                                    <p class="card-text"> 50 Goals </p>
-                                    <ul>
-                                        <li>170 Assists</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <button type="button" id="select-btn3" class="btn btn-primary"
-                                        onclick="playerSelect(this)">Select</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 w-100">
-                            <img src="images/neymar.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title" id="player-name4">Neymar Jr.</h5>
-                                <div class="d-flex">
-                                    <p class="card-text"> 60 Goals </p>
-                                    <ul>
-                                        <li>170 Assists</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <button type="button" id="select-btn4" class="btn btn-primary"
-                                        onclick="playerSelect(this)">Select</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 w-100">
-                            <img src="images/luis-suarez.webp" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title" id="player-name5">luis Suarez</h5>
-                                <div class="d-flex">
-                                    <p class="card-text"> 30 Goals </p>
-                                    <ul>
-                                        <li>120 Assists</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <button type="button" id="select-btn5" class="btn btn-primary"
-                                        onclick="playerSelect(this)">Select</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 w-100">
-                            <img src="images/Kaka.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title" id="player-name6">Kaka</h5>
-                                <div class="d-flex">
-                                    <p class="card-text"> 6 Goals </p>
-                                    <ul>
-                                        <li>170 Assists</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <button type="button" id="select-btn6" class="btn btn-primary"
-                                        onclick="playerSelect(this)">Select</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
                 </div>
-
-
-                <div>
-                    <div class="selected ">
-                        <h4 class="mt-1 text-center text-white">Selected 5 <span class="selecte-value"
-                                id="selected-value">0</span>
-                        </h4>
-                        <ol id="selectList" class="list-decimal text-white">
-
-                        </ol>
-
+                <div class="box">
+                    <div>
+                        <img src="picture/david-warner.jpg" alt="">
                     </div>
-
-
-                    <div class="selected mt-2  ">
-                        <div>
-                            <h4 class="text-center text-white">Budget</h4>
-                            <span class="text-white">Per Player: </span> <input id="per-player" type="text">
-                            <div class="mt-4">
-                                <button type="button" id="calculate-btn"
-                                    class="btn btn-primary ms-5 text-white p-2">Calculate</button> <br>
-                            </div>
-                            <br>
-                            <h6 id="expense-part" class="ms-5 px-2 text-white">Player Expenses $ <span
-                                    id="player-expenses">0
-                                </span> </h6>
-                            <br>
-                            <div>
-                                <span class="text-white">Manager:</span> <input id="manager-field" class="ms-2"
-                                    type="text"> <br> <br>
-                                <span class="text-white">Coach: </span> <input id="coach-field" class="ms-4"
-                                    type="text">
-                                <div class="mt-4">
-                                    <button type="button" id="btn-calculate-total"
-                                        class="btn btn-primary ms-5">Calculate
-                                        Total</button>
-                                </div>
-                                <h6 class="text-center text-white">Total: $ <span id="total-sum"> 0</span></h6>
-                            </div>
-                            <br>
-
-                        </div>
+                    <div class="text-center">
+                        <h1>David Warner</h1>
+                        <p>Total Run ODI 15,000 <br>Century : 42</p>
+                        <button id="warner-button" class="select-button"> Select</button>
                     </div>
-
                 </div>
-
-
-
+                <div class="box">
+                    <div>
+                        <img src="picture/ben-stokes.jpg" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h1>Ben Stokes</h1>
+                        <p>Total Run ODI 15,000 <br>Century : 27</p>
+                        <button id="stokes-button" class="select-button"> Select</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <img src="picture/babar-azam.jpg"">
+                    </div>
+                    <div class="text-center">
+                        <h1>Babar Azam</h1>
+                        <p>Total Run ODI 15,000 <br>Century : 50</p>
+                        <button id="babar-button" class="select-button"> Select</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <img src="picture/mohammad-rizwan.jpg" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h1>Mohammad Rizwan</h1>
+                        <p>Total Run ODI 15,000 <br>Century : 25</p>
+                        <button id="rizwan-button" class="select-button"> Select</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <img src="picture/shakib.jpg" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h1>Shakib All Hasan</h1>
+                        <p>Total Run ODI 15,000 <br>Century : 49</p>
+                        <button id="shakib-button" class="select-button"> Select</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <img src="picture/rohit-sharma.jpg" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h1>Rohit Sharma</h1>
+                        <p>Total Run ODI 15,000 <br>Century : 49</p>
+                        <button id="rohit-button" class="select-button"> Select</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <img src="picture/gayle.jpg" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h1>Chris Gayle</h1>
+                        <p>Total Run ODI 15,000 <br>Century : 49</p>
+                        <button id="gayle-button" class="select-button"> Select</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <img src="picture/ab.jpg" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h1>A B Diviliars</h1>
+                        <p>Total Run ODI 15,000 <br>Century : 49</p>
+                        <button id="ab-button" class="select-button"> Select</button>
+                    </div>
+                </div>
+            
             </div>
 
 
+            <!---- calculation part star--- -->
 
+            <div class="calculate-container">
 
-            <!-- -------------------------card section end--------------- -->
-    
+                <div class="select">  <br>
+                    <h1>Select - 5</h1>
+                    <div class="player-list">
+
+                      <ol class="order-list"> </ol>
+                        
+                    </div>
+                </div>
+
+                <div class="calculate">
+
+                    <h1 class="budget-header">Budget</h1>
+                    <label for="">Per Player : </label>
+                    <input id="per-player-field" type="text"> <br> <br>
+                    <button id="calculate-btn">calculate</button> <br>
+                    <h3>Player Expenses $<span id="expenses-amount">00</span></h3>  <br>
+                    <label for="">Manager</label>
+                    <input id="manager-field" type="text"> <br> <br>
+                    <label for="">Coach</label>
+                    <input id="coach-field" type="text"> <br> <br>
+                    <button id="total-calculate">Calculate Total</button> <br> <br>
+                    <label>Total</label> <label>$<span id="total-amount" >00</span></label>
+
+                </div>
+
+            </div>
+
+            <!-- ---- calculation part end--- --> -->
+            
         </section>
-
     </main>
 
 
+    <!---- main part end------- -->
 
 
-    <!-- -------------------main section end--------------------- -->
-    <script src="js/main.js"></script>
-    <!-- <script src="js/budget.js"></script> -->
+
+<!-- footer -start-->
+<footer>
+
+    <hr>
+       
+            <p>Copyright @ All Rights Reserved.</p>
+       
+</footer>
+
+<!-- footer -end-->
+<!-- js-script -->
+    <script defer src="main.js"></script>
+    
 </body>
-
 </html>
