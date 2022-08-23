@@ -7,7 +7,7 @@ function countChild(){
 }
 
 
-const button = document.querySelectorAll('.select-button');
+const button = document.querySelectorAll('.player-select');
 
 
         for(let i = 0; i<9; i++){
@@ -18,8 +18,6 @@ const button = document.querySelectorAll('.select-button');
             const parent = this.parentNode;
             const firstChild = parent.firstElementChild;
             const getName = firstChild.innerHTML;
-  
-  
 
           const x = countChild();
           if( x < 5){
