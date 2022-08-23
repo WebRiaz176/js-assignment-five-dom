@@ -1,0 +1,53 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    background-color: rgb(230, 174, 165);
+
+}
+
+/*----------------- header secttion style ---------------*/
+.header-section {
+    margin-top: 0%;
+    height: 400px;
+}
+
+.head {
+    display: flex;
+}
+
+
+.header-image {
+    height: 300px;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+/*--------------------- end header section style --------------------*/
+
+
+/* .card-body {
+    height: 200px;
+} */
+
+button:disabled,
+button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+
+.card-part {
+    width: 70%;
+}
+
+.selected {
+    margin-left: 70px;
+    height: 350px;
+}
+
+.selecte-value {
+    visibility: hidden;
+}

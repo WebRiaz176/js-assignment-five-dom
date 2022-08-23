@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Football is back on the streets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Poppins:wght@400;500&family=Roboto&family=Roboto+Slab&family=Rubik&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!------------------- header part start -------------------->
+    <header class="bg-dark text-white header-section">
+        <section>
+            <div class=" head">
+                <div> <img class="header-image border-none rounded " src="images/Neymar-messi-suarez.webp" alt=""
+                        srcset="">
+                </div>
+                <div class="mt-5 p-5 text-center">
+                    <h1>Football Is Back On The Streets</h1>
+                    <p> Here you can see the player list and Budget of the player.</p>
+                </div>
+            </div>
+        </section>
+
+
+    </header>
+    <!-- --------------------header part end----------------------------->
+
+    <!-- -------------------main section start--------------------- -->
+    <main class="bg-dark">
+
+
+        <!-- -------------------------card section start--------------- -->
+
+        <section class="container mt-5">
+            <div class="d-flex">
+
+                <div class=" card-part k row row-cols-1 row-cols-md-3 g-4">
+
+                    <div class="col">
+                        <div class="card h-100 w-100">
+                            <img src="images/Cristiano-Ronaldo.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="player-name">Cristiano Ronaldo</h5>
+                                <div class="d-flex">
+                                    <p class="card-text"> 30 Goals </p>
+                                    <ul>
+                                        <li>120 Assists</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <button type="button" id="select-btn" class="btn btn-primary"
+                                        onclick="playerSelect(this)">Select</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 w-100">
+                            <img src="images/Messi.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="player-name2">Lionel Messi</h5>
+                                <div class="d-flex">
+                                    <p class="card-text"> 70 Goals </p>
+                                    <ul>
+                                        <li>200 Assists</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <button type="button" id="select-btn2" class="btn btn-primary"
+                                        onclick="playerSelect(this)">Select</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 w-100">
+                            <img src="images/lukaa-modric.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="player-name3">Luka Modric</h5>
+                                <div class="d-flex">
+                                    <p class="card-text"> 50 Goals </p>
+                                    <ul>
+                                        <li>170 Assists</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <button type="button" id="select-btn3" class="btn btn-primary"
+                                        onclick="playerSelect(this)">Select</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 w-100">
+                            <img src="images/neymar.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="player-name4">Neymar Jr.</h5>
+                                <div class="d-flex">
+                                    <p class="card-text"> 60 Goals </p>
+                                    <ul>
+                                        <li>170 Assists</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <button type="button" id="select-btn4" class="btn btn-primary"
+                                        onclick="playerSelect(this)">Select</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 w-100">
+                            <img src="images/luis-suarez.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="player-name5">luis Suarez</h5>
+                                <div class="d-flex">
+                                    <p class="card-text"> 30 Goals </p>
+                                    <ul>
+                                        <li>120 Assists</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <button type="button" id="select-btn5" class="btn btn-primary"
+                                        onclick="playerSelect(this)">Select</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 w-100">
+                            <img src="images/Kaka.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="player-name6">Kaka</h5>
+                                <div class="d-flex">
+                                    <p class="card-text"> 6 Goals </p>
+                                    <ul>
+                                        <li>170 Assists</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <button type="button" id="select-btn6" class="btn btn-primary"
+                                        onclick="playerSelect(this)">Select</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div>
+                    <div class="selected ">
+                        <h4 class="mt-1 text-center text-white">Selected 5 <span class="selecte-value"
+                                id="selected-value">0</span>
+                        </h4>
+                        <ol id="selectList" class="list-decimal text-white">
+
+                        </ol>
+
+                    </div>
+
+
+                    <div class="selected mt-2  ">
+                        <div>
+                            <h4 class="text-center text-white">Budget</h4>
+                            <span class="text-white">Per Player: </span> <input id="per-player" type="text">
+                            <div class="mt-4">
+                                <button type="button" id="calculate-btn"
+                                    class="btn btn-primary ms-5 text-white p-2">Calculate</button> <br>
+                            </div>
+                            <br>
+                            <h6 id="expense-part" class="ms-5 px-2 text-white">Player Expenses $ <span
+                                    id="player-expenses">0
+                                </span> </h6>
+                            <br>
+                            <div>
+                                <span class="text-white">Manager:</span> <input id="manager-field" class="ms-2"
+                                    type="text"> <br> <br>
+                                <span class="text-white">Coach: </span> <input id="coach-field" class="ms-4"
+                                    type="text">
+                                <div class="mt-4">
+                                    <button type="button" id="btn-calculate-total"
+                                        class="btn btn-primary ms-5">Calculate
+                                        Total</button>
+                                </div>
+                                <h6 class="text-center text-white">Total: $ <span id="total-sum"> 0</span></h6>
+                            </div>
+                            <br>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+            <!-- -------------------------card section end--------------- -->
+    
+        </section>
+
+    </main>
+
+
+
+
+    <!-- -------------------main section end--------------------- -->
+    <script src="js/main.js"></script>
+    <!-- <script src="js/budget.js"></script> -->
+</body>
+
+</html>
